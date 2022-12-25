@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es" >
+    <head>
+        <meta charset="UTF-8" >
+        <title> Contacto-Barbería Alura </title>
+        <link rel="icon" type="image/png" href="../../images/logo.png">
+        <link rel="stylesheet" href="../../reset.css">
+        <link rel="stylesheet" href="Contactos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nerko+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="caja" >
+                <h1 id="Logo"> <img src="../../images/logo.png" alt="logo de la barberia Alura"> </h1>
+                <nav>
+                    <ul>
+                        <li> <a href="../../index.html"> Home </a> </li>
+                        <li> <a href="../Productos/Productos.html"> Productos </a> </li>
+                        <li> <a href="../Contacto/Contactos.html"> Contacto </a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <form>
+                <label for="nombreApellido"> Nombre y Apellido </label>
+                <input 
+                    class = "input-padron" 
+                    type = "text" 
+                    id = "nombreApellido" 
+                    equired 
+                >
+                
+                <label for="correo"> Correo electrónico </label>
+                <input 
+                    class = "input-padron" 
+                    type = "email" 
+                    id = "correo" 
+                    placeholder = "email@dominio.com"
+                    required 
+                >
+                
+                <label for="telefono"> Teléfono </label>
+                <input 
+                    class = "input-padron" 
+                    type = "tel" 
+                    id = "telefono" 
+                    placeholder = "(XX) XXXX XXXX"
+                    required 
+                >
+                
+                <label for="mensaje"> Mensaje </label>
+                <textarea 
+                    class = "input-padron" 
+                    id = "mensaje" 
+                    id = "" 
+                    cols = "60" 
+                    rows = "10" 
+                    required 
+                >  </textarea>
+                
+                <fieldset>
+                    <legend> Cómo le gustaria que lo contactemos? </legend>
+                    
+                    <label for="radio-email"> 
+                        <input 
+                            type = "radio" 
+                            name = "contacto" 
+                            value = "email" 
+                            id = "radio-email"
+                        > 
+                        Email 
+                    </label>
+                    
+                    <label for="radio-telefono"> 
+                        <input 
+                            type = "radio" 
+                            name = "contacto" 
+                            value = "telefono" 
+                            id = "radio-telefono"
+                        >
+                        Teléfono 
+                    </label>
+                    
+                    <label for="radio-whatsapp"> 
+                        <input 
+                            type = "radio" 
+                            name = "contacto" 
+                            value = "whatsapp" 
+                            id = "radio-whatsapp"
+                            checked
+                        >
+                        Whatsapp 
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend> ¿En cual horario prefiere ser atendido? </legend>
+                    <select>
+                        <option> Mañana </option>
+                        <option> Tarde </option>
+                        <option> Noche </option>
+                    </select>
+                </fieldset>
+                
+                <label class = "chechkbox" > 
+                    <input 
+                        type = "checkbox" 
+                        checked 
+                    > 
+                    ¿Le gustaria recibir novedades de la barberia Alura? 
+                </label>
+                
+                <input type="submit" value="Enviar formulario" class="enviar">
+            </form>
+            
+            <table> <!-- tr → filas || td → columnas || thead → encabezado de la tabla || tbody → cuerpo de la tabla -->
+                <thead> 
+                    <tr>  
+                        <th> Día </th>
+                        <th> Horario </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> Lunes </td>
+                        <td> 08h ~ 20h </td>
+                    </tr>
+                    <tr>
+                        <td> Miercoles </td>
+                        <td> 08h ~ 20h </td>
+                    </tr>
+                    <tr>
+                        <td> Viernes </td>
+                        <td> 08h ~ 20h </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        
+        <footer>
+            <img src="../../images/logo-blanco.png" alt="logo de la barberia Alura">
+            <p class="copyrigth"> &copy; Copyright Barbería Alura - 2022 </p>
+        </footer>
+    </body>
+</html>
